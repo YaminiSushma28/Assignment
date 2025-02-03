@@ -1,0 +1,125 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #f9f9f9;
+    color: #333;
+  }
+  
+  /* Header */
+  header {
+    background-color: #0046ad;
+    color: white;
+  }
+  
+  
+  .banner {
+    text-align: center;
+    padding: 50px 20px;
+    background: #222 url('banner-image.jpg') no-repeat center/cover;
+    color: white;
+  }
+  
+  .banner h1 {
+    margin: 0;
+    font-size: 2.5rem;
+  }
+  
+  /* Main Content */
+  .breadcrumbs {
+    margin: 20px;
+    font-size: 0.9rem;
+    color: #666;
+  }
+  
+  .content-wrapper {
+    display: flex;
+    margin: 0 20px;
+  }
+  
+  /* Filters */
+  .filters {
+    flex: 1;
+    padding: 20px;
+    background: #fff;
+    border-right: 1px solid #ddd;
+  }
+  
+  .filters h3 {
+    margin: 0 0 20px;
+  }
+  
+  .filters .filter-group h4 {
+    margin: 10px 0;
+  }
+  
+  /* Products */
+  .products {
+    flex: 3;
+    padding: 20px;
+  }
+  
+  .products .header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+  }
+  
+  .product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+  }
+  
+  .product-grid .product-card {
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    text-align: center;
+    padding: 10px;
+    transition: transform 0.2s ease;
+  }
+  
+  .product-grid .product-card:hover {
+    transform: scale(1.05);
+  }
+  
+  /* .product-card img {
+    max-width: 100%;
+    border-bottom: 1px solid #ddd;
+    margin-bottom: 10px;
+  } */
+
+  .product-card img {
+    width: 150px; /* Fixed width */
+    height: 180px; /* Fixed height */
+    object-fit: contain; /* Ensures the full image is displayed */
+    border-radius: 5px; /* Optional: Adds rounded corners */
+  }
+  
+  .product-card h3 {
+    text-align: start;
+    font-size: 1rem;
+    margin: 10px 0;
+  }
+  
+  .product-card p {
+    text-align: start;
+    font-size: 0.9rem;
+    color: #666;
+  }
+
+  /* Heart Icon Styling */
+
+ 
+  /* Footer */
+  footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #f1f1f1;
+  }
+  
+
+  
