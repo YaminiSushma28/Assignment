@@ -1,4 +1,4 @@
-/* General Styles */
+
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -8,26 +8,49 @@ body {
     color: #333;
   }
   
-  /* Header */
+
   header {
     background-color: #0046ad;
     color: white;
   }
   
-  
+
   .banner {
-    text-align: center;
-    padding: 50px 20px;
-    background: #222 url('banner-image.jpg') no-repeat center/cover;
+    display: flex;
+    align-items: center;
+    background-color: black;
     color: white;
+    width: 100%;
+    max-height: 200px;
+    overflow: hidden;
+    padding: 20px;
   }
   
-  .banner h1 {
-    margin: 0;
-    font-size: 2.5rem;
+  .banner-text {
+    flex: 1;
+    padding: 20px;
+    color: white;
+    text-align: center;
   }
   
-  /* Main Content */
+  .banner-text h2 {
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .banner-image {
+    flex: 2;
+    overflow: hidden;
+  }
+  
+  .banner-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  
+ 
   .breadcrumbs {
     margin: 20px;
     font-size: 0.9rem;
@@ -39,7 +62,7 @@ body {
     margin: 0 20px;
   }
   
-  /* Filters */
+
   .filters {
     flex: 1;
     padding: 20px;
@@ -55,7 +78,7 @@ body {
     margin: 10px 0;
   }
   
-  /* Products */
+
   .products {
     flex: 3;
     padding: 20px;
@@ -86,17 +109,13 @@ body {
     transform: scale(1.05);
   }
   
-  /* .product-card img {
-    max-width: 100%;
-    border-bottom: 1px solid #ddd;
-    margin-bottom: 10px;
-  } */
+  
 
   .product-card img {
-    width: 150px; /* Fixed width */
-    height: 180px; /* Fixed height */
-    object-fit: contain; /* Ensures the full image is displayed */
-    border-radius: 5px; /* Optional: Adds rounded corners */
+    width: 150px; 
+    height: 180px; 
+    object-fit: contain; 
+    border-radius: 5px; 
   }
   
   .product-card h3 {
@@ -111,8 +130,25 @@ body {
     color: #666;
   }
 
-  /* Heart Icon Styling */
-
+   @media (max-width: 768px) {
+    .banner {
+      flex-direction: row;
+      padding: 10px;
+    }
+  
+    .banner-text {
+      flex: 1;
+      padding: 10px;
+    }
+  
+    .banner-text h2 {
+      font-size: 20px; 
+    }
+  
+    .banner-image {
+      flex: 1.5;
+    }
+  }
  
   /* Footer */
   footer {
@@ -120,6 +156,7 @@ body {
     padding: 10px;
     background-color: #f1f1f1;
   }
+
   
 
   
